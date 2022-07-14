@@ -22,9 +22,8 @@ body{
     justify-content: center;
     background: transparent;
 
-    width: 50%;
-    max-width: 400px;
-    box-shadow: 0 5px 8px rgb(0 0 0);
+    width: 400px;
+        box-shadow: 0 5px 8px rgb(0 0 0);
     border-radius: 2em;
 }
 .cronometro #tempo{
@@ -34,6 +33,8 @@ body{
 }
 .cronometro #buttons{
     margin: 10px;
+    display: flex;
+    flex-direction: row;
 }
 .cronometro #buttons button{
     color: whitesmoke;
