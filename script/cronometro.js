@@ -28,6 +28,15 @@ function reset(){
     document.getElementById('tempo').innerText = '00:00:00'
 }
 
+function ZeroAesquerda(n){
+    let t
+    if( n<10){
+        t = '0'+ n
+    }else
+    { t=n}
+    return t
+}
+
 function cont(){
     
     sec++
@@ -42,24 +51,11 @@ function cont(){
 
    
     
-    if(sec < 10){
-        
-
-    } else{}
-    
-    if(min == 0 ){
-        min = '00'
-
-    } else{}
-    
-    if(hr == 0){
-        hr = '00'
-
-    } else{}
+   
     
     
     
     
     
-    document.getElementById('tempo').innerText = hr + ':' + min + ':' + sec
+    document.getElementById('tempo').innerText = ZeroAesquerda(hr) + ':' + ZeroAesquerda(min) + ':' + ZeroAesquerda(sec)
 }
